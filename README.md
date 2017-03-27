@@ -14,7 +14,6 @@ These instructions will get you a copy of the project up and running on your loc
 This script is very easy to use and even easier to install.
 
 ```
-
 <select id="cDropdown"></select>
 
 <script src="/jquery-1.10.2.js"></script>
@@ -33,29 +32,21 @@ That is it !!
 
 ### Lets break it down a bit
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
 ```
 obj: [
       {
-        "Application": {
-            "Id": "Application",
-            "Name": "Application",
-            "Primary": true,
-            "Class": "form-control",
-            "Child": "Language",
-            "Sort": true,
-            "Required": true,
-            "option": [{
-                "val": "CPreQVa",
-                "text": "What kind of application do you wish to make",
-                "preSelect": true
+        "Application": {  // Your dropdown object
+            "Id": "Application",  // The ID of the dropdown
+            "Name": "Application",  // The Name of the dropdown   / Optional
+            "Primary": true,  // The Primary dropdown, aka the one a user should see first
+            "Class": "form-control",   // Add classes to your dropdown   / Optional
+            "Child": "Language",  // 
+            "Sort": true,  // Will sort the options alphabetically   / Optional
+            "Required": true,  // Add the required option to the dropdown   / Optional
+            "option": [{  // An array of options
+                "val": "CPreQVa",  // The value of the option
+                "text": "What kind of application do you wish to make",  // The text of the option
+                "preSelect": true  // If preSelect is true, it will be our preshown option of the dropdown   / Optional
             }, {
                 "val": "Web_app",
                 "text": "Web application"
@@ -102,6 +93,7 @@ obj: [
 ## What to come
 
  * Option to allow multiple selects of a dropdown.
+ * Adding example for: MVC, PHP
 
 ## Authors
 
