@@ -88,7 +88,7 @@ obj: [
 
 ## Versioning
 
- * V 1.000 - 
+ * V 1.000
 
 ## What to come
 
