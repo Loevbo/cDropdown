@@ -97,7 +97,7 @@ obj: [
 
 ## Authors
 
-* **Carsten Løvbo** - *Initial work* - [Loevbo](https://github.com/Loevbo)
+* **Carsten Løvbo** - [Loevbo](https://github.com/Loevbo)
 
 ## License
 
