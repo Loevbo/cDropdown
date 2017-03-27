@@ -2,7 +2,7 @@
 # cDropDown
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### What do I need?
 
@@ -27,11 +27,11 @@ This script is very easy to use and even easier to install.
 ```
 That is it !! 
 
-### Examples of the code with different type of code languages ###
+### Examples of the code with different type of code languages
 
  * [jQuery array]() - Example by only using an array
 
-### Break down into end to end tests
+### Lets break it down a bit
 
 Explain what these tests test and why
 
@@ -41,19 +41,67 @@ Give an example
 
 ### And coding style tests
 
-Explain what these tests test and why
-
 ```
-Give an example
+obj: [
+      {
+        "Application": {
+            "Id": "Application",
+            "Name": "Application",
+            "Primary": true,
+            "Class": "form-control",
+            "Child": "Language",
+            "Sort": true,
+            "Required": true,
+            "option": [{
+                "val": "CPreQVa",
+                "text": "What kind of application do you wish to make",
+                "preSelect": true
+            }, {
+                "val": "Web_app",
+                "text": "Web application"
+            }, {
+                "val": "Mob_app",
+                "text": "Mobile application"
+            }]
+        }, "Language": {
+            "Id": "Language",
+            "Name": "Language",
+            "Class": "form-control",
+            "Sort": true,
+            "option": [{
+                "val": "CPreQVa",
+                "text": "Select the language you wish to create your application in",
+                "preSelect": true
+            }, {
+                "val": "MVC",
+                "text": "MVC",
+                "trigger": "Web_app"
+            }, {
+                "val": "C#",
+                "text": "C#",
+                "trigger": "Web_app"
+            }, {
+                "val": "PHP",
+                "text": "PHP",
+                "trigger": "Web_app,Mob_app"
+            }, {
+                "val": "js",
+                "text": "JavaScript",
+                "trigger": "Mob_app"
+            }]
+        }
+    }
+]
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
  * V 1.000 - 
+
+## What to come
+
+ * Option to allow multiple selects of a dropdown.
 
 ## Authors
 
