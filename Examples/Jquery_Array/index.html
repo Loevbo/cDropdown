@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cDropdown - jQuery array</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        select {
+            max-width: 400px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="Script/cDropdown.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#cDropdown').cDropdown({
+                obj: [
+                      {
+                          "Application": {
+                              "Id": "Application",
+                              "Name": "Application",
+                              "Primary": true,
+                              "Class": "form-control",
+                              "Child": "Language",
+                              "Sort": true,
+                              "Required": true,
+                              "option": [{
+                                  "val": "CPreQVa",
+                                  "text": "What kind of application do you wish to make",
+                                  "preSelect": true
+                              }, {
+                                  "val": "Web_app",
+                                  "text": "Web application"
+                              }, {
+                                  "val": "Mob_app",
+                                  "text": "Mobile application"
+                              }]
+                          }, "Language": {
+                              "Id": "Language",
+                              "Name": "Language",
+                              "Class": "form-control",
+                              "Sort": true,
+                              "option": [{
+                                  "val": "CPreQVa",
+                                  "text": "Select the language you wish to create your application in",
+                                  "preSelect": true
+                              }, {
+                                  "val": "MVC",
+                                  "text": "MVC",
+                                  "trigger": "Web_app"
+                              }, {
+                                  "val": "C#",
+                                  "text": "C#",
+                                  "trigger": "Web_app"
+                              }, {
+                                  "val": "PHP",
+                                  "text": "PHP",
+                                  "trigger": "Web_app,Mob_app"
+                              }, {
+                                  "val": "js",
+                                  "text": "JavaScript",
+                                  "trigger": "Mob_app"
+                              }]
+                          }
+                      }
+                ]
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>cDropdown</h2>
+                <select id="cDropdown"></select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
