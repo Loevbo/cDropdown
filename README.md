@@ -28,7 +28,7 @@ That is it !!
 
 ### Examples of the code with different type of code languages
 
- * [jQuery array]() - Example by only using an array
+ * [jQuery array](https://github.com/Loevbo/cDropdown/tree/master/Examples/Jquery_Array) - Example by only using an array
 
 ### Lets break it down a bit
 
@@ -101,6 +101,6 @@ obj: [
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Loevbo/cDropdown/blob/master/LICENSE) file for details
 
 
