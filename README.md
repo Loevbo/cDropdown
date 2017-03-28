@@ -35,18 +35,18 @@ That is it !!
 ```
 obj: [
       {
-        "Application": {  // Your dropdown object
-            "Id": "Application",  // The ID of the dropdown
-            "Name": "Application",  // The Name of the dropdown   / Optional
-            "Primary": true,  // The Primary dropdown, aka the one a user should see first
-            "Class": "form-control",   // Add classes to your dropdown   / Optional
-            "Child": "Language",  // 
-            "Sort": true,  // Will sort the options alphabetically   / Optional
-            "Required": true,  // Add the required option to the dropdown   / Optional
-            "option": [{  // An array of options
-                "val": "CPreQVa",  // The value of the option
+        "Application": {                                                 // Your dropdown object
+            "Id": "Application",                                         // The ID of the dropdown
+            "Name": "Application",                                       // The Name of the dropdown   / Optional
+            "Primary": true,                                             // The Primary dropdown, aka the one a user should see first
+            "Class": "form-control",                                     // Add classes to your dropdown   / Optional
+            "Child": "Language",                                         // What dropdwown shall be shown, when we select something from this.
+            "Sort": true,                                                // Will sort the options alphabetically   / Optional
+            "Required": true,                                            // Add the required option to the dropdown   / Optional
+            "option": [{                                                 // An array of options
+                "val": "CPreQVa",                                        // The value of the option
                 "text": "What kind of application do you wish to make",  // The text of the option
-                "preSelect": true  // If preSelect is true, it will be our preshown option of the dropdown   / Optional
+                "preSelect": true                                        // If preSelect is true, it will be our preshown option of the dropdown   / Optional
             }, {
                 "val": "Web_app",
                 "text": "Web application"
